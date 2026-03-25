@@ -121,6 +121,14 @@ return network.registerProtocol('amneziawg', {
 		return _('AmneziaWG VPN');
 	},
 
+	getType: function() {
+		return 'amneziawg';
+	},
+
+	getTypeI18n: function() {
+		return _('AmneziaWG VPN Interface');
+	},
+
 	getIfname: function() {
 		return this._ubus('l3_device') || this.sid;
 	},
